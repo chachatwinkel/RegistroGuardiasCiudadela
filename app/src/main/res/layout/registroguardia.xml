@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#121214">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛡️ REGISTRO DE GUARDIAS"
+        android:textColor="#A29BFE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/nombreSoldado"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6C5CE7"
+        android:hint="Nombre del Soldado"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#75757A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rango Militar"
+        android:textColor="#9E9E9E"
+        android:layout_marginBottom="4dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgRango"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/opcRecluta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recluta"
+            android:textColor="#FFFFFF"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/opcCapitan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capitán"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/opcVeterano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veterano"
+            android:textColor="#FFFFFF"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="En Guardia"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnGuardarGuardia"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:text="Guardar Registro"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#6C5CE7"/>
+</LinearLayout>
